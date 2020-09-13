@@ -1,0 +1,15 @@
+  620  docker build -t color_game:1.7 .
+  621  docker run -d --name color_game_container -p 100:80 color_game:1.7
+  622  docker exec -it color_game_container
+  623  docker ps
+  624  docker exec -it c0d1f371fb14
+  625  docker exec -it c0d1f371fb14 bash
+  626  winpty docker exec -it c0d1f371fb14 bash
+  627  docker exec -it c0d1f371fb14 bash
+  628  winpty docker exec -it c0d1f371fb14 bash
+  629  winpty docker exec -it c0d1f371fb14 bash
+  630  ls
+  631  docker images
+  632  docker build -t color_game_port:1.8 .
+  633  docker images
+  634  docker run -d --name color_game_container_port -p 1000:8081 color_game_port:1.8
